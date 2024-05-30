@@ -103,8 +103,9 @@
 - CEO의 대학, 학과, 최종학력 수집
 
 ### 🌟 최종변수
-이미지
-빨간색으로 표시된 것이 차별화된 변수
+<img width="1131" alt="스크린샷 2024-05-30 오후 5 47 10" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/23fc8675-8a7e-4982-b6c4-d205d1491fe6">
+
+빨간색으로 표시된 것이 다른 연구와 **차별화된 변수**
 
 &nbsp;
 
@@ -120,7 +121,8 @@
 
 # 💡 EDA
 ### 🌟 국내 스타트업 주요 현황
-EDA1
+<img width="1220" alt="스크린샷 2024-05-30 오후 5 45 59" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/cfd29be1-f2ef-4ea5-a642-3d16356e87c0">
+
 - 스타트업을 총 24개로 업종으로 분류, 그 중 상위 5개 스타트업 업종별 최종투자단계를 나타냄
 - 블록체인/딥테크/AI가 가장 투자를 많이 받았으며, 요즘 유망한 업종으로 떠오르는 헬스케어/바이오가 2위
 - 쿠팡, 마켓컬리 등과 같이 우리가 쉽게 접할 수 있는 커머스 업종이 3위
@@ -128,18 +130,21 @@ EDA1
 - seried E~H 투자를 받은 스타트업은 총 112개뿐으로 Series A 투자를 받은 스타트업의 5%도 되지 않는 것을 알 수 있
 
 ### 🌟 CEO 정보공개 비율
-EDA2
+<img width="1006" alt="스크린샷 2024-05-30 오후 5 47 57" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/e7f5fe10-e8d3-4c97-927f-2b2dc2212b19">
+
 - 링크드인, 페이스북, 로켓펀치 등 사이트를 크롤링하여 기업의 CEO 정보를 수집
 - 학교를 기입하지 않는 기업의 경우 시리즈 A에서 시리즈B를 받은 기업은 17%
 - 학교를 기입한 기업의 경우 시리즈 A에서 시리즈B 받은 기업은 21%
 
 ### 🌟 대학 분류별 재투자 비율
-EDA3
+<img width="617" alt="스크린샷 2024-05-30 오후 5 48 35" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/fe69d7aa-0f67-4b9e-973c-349f922cad22">
+
 - CEO의 출신 대학별 시리즈 A에서 시리즈B로 재투자 받은 비율은 SKY가 35%로 가장 많고, 과학기술원이 16%로 가장 적음
 - 기타대학 수가 가장 많았으며, 과학기술원 수가 가장 적었던 것을 고려하면 출신대학이 SKY인 경우 재투자비율이 절대적으로도,상대적으로도 높음
 
 ### 데이터셋 필터링 및 투자유치
-EDA4
+<img width="745" alt="스크린샷 2024-05-30 오후 5 50 03" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/8fe99f56-b816-435d-b6e6-e8026f7fc73c">
+
 - 혁신의 숲에 등재된 스타트업 8139개 중 투자횟수 0건과 seriesA 투자를 받은 6601건을 필터링하고 1538개의 데이터를 기준으로 분석을 진행
 - 전체 데이터셋에서 투자를받지 못한 비중은 40.1%, 기타 41.0%, seriesA가 15% seriesB가 3.9%
 
@@ -148,7 +153,7 @@ EDA4
 # 📖 모델링
 
 ### 🌟 Feature Importance
-featureimportance
+<img width="616" alt="스크린샷 2024-05-30 오후 5 50 48" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/0460c2eb-15db-4bfc-b3ed-c26b7d46bde9">
 - XGBoost, LightGBM, RandomForest, DecisionTree 네가지 모델을 기반으로 Feature Importance를 구함
 - 60개 변수 중 공통적으로 포함된 15개의 변수를 선정
 - 재무 관련 변수가 대다수였으며, 트래픽, 뉴스, 특허 수, 설립년도 등의 변수가 포함
@@ -162,7 +167,7 @@ featureimportance
     - 투자자입장에서는 precision이 중요하지만 창업자입장에서는 종합적인 지표를 고려할 필요가 있다는 점에서 precision과 recall을 모두 고려한 F1-score를 평가지표로 사용
 
 ### 🌟 최종 모델 및 결과
-result1
+<img width="1146" alt="스크린샷 2024-05-30 오후 5 51 31" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/df756aa3-9d81-4b8b-9a4e-eb344de50ac3">
 - XGBoost, LightGBM, RandomForest 세가지 모델 중 가장 높은 성능을 보인 ${\textsf{\color{red}LightGBM}}$을 최종 모델로 선정
 - LightGBM 모델의 변수 중요도 확인
   - Man Power 관련 변수들의 중요도가 낮지만 Ceo_info, 학과 중 IT, SKY 여부가 조금 유의하게 나타남
@@ -174,8 +179,8 @@ result1
 
 # 😎 서비스 예시 및 기대효과
 ### 🌟 서비스 적용 예시
-service
-service2
+<img width="1022" alt="스크린샷 2024-05-30 오후 5 52 34" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/29c7eebe-b447-44ff-9977-56f815399d09">
+<img width="1024" alt="스크린샷 2024-05-30 오후 5 53 32" src="https://github.com/SUUUUUMIN/ML_project/assets/93477480/8ce10359-bb55-442a-8f19-359dcff6cdd7">
 - 기업 정보를 입력하게 되면 기업이 시리즈를 B를 받을 수 있는 확률에 대한 결과를 얻을 수 있음
 
 ### ✅ 의의 및 기대효과
